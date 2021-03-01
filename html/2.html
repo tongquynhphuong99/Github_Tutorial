@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x=2;
+        var tong=2;
+        while (0<x && x<50){
+            x=x+2;
+            tong=tong+x;
+        }
+        document.write(tong)
+    </script>
+    <script>
+        var x=2;
+        var tong=2;
+        do{
+            x=x+2;
+            tong=tong+x;
+        }
+        while(0<x && x<50);
+        document.write(tong);
+    </script>
+    <script>
+         var x=2;
+        var tong=2;
+        for( var i=0;i<24;i++){
+            x=x+2;
+            tong=tong+x;
+        }
+        document.write(tong);
+    </script>
+    <script>
+        var a=prompt("nhap vao a:");
+        var b=prompt("nhap vao b:");
+        var c=prompt("nhap vao c:");
+        a=Number(a);
+        b=Number(b);
+        c=Number(c);
+        var dental= b*b-4*a*c;
+
+        if(dental>=0){
+            var x1=((-b-Math.sqrt(dental))/(2*a));
+            var x2=((-b+Math.sqrt(dental))/(2*a));
+            document.write(x1);
+
+            document.write(x2); 
+        }
+        else{
+            document.write("vo nghiem");
+        }
+    
+    </script>
+
+    <script>
+        for(var i=1;i<11;i++){
+            document("<tr>")
+            for(var j=2;j<10;j++){
+                document.write("<td>");
+                i=Number(i);
+                j=Number(j);
+                var tich=i*j
+                document.write(i);
+                document.write("*");
+                document.write(j);
+                document.write("=");
+                document.write(tich);
+                document.write("</td>");
+            }
+            document("</tr>")
+            
+        }
+
+    </script>
+</body>
+</html>
